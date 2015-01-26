@@ -32,7 +32,8 @@ use Indigo\Cart\Store;
 
 $cart = new Cart\Simple;
 
-// name, price, quentity [, id]
+// Throws an exception if any of these are invalid
+// name, price, quantity [, id]
 $cart->addItem(new Item\Simple('Item', 1, 1, '_ITEM_'));
 
 // Get total price
